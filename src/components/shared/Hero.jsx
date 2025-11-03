@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="absolute bottom-20 left-20 w-72 h-72 bg-sky-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center py-20">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto items-center -mt-40 pb-1">
         {/* Text Content */}
         <div className="text-center lg:text-left space-y-8">
           <div className="space-y-4">
@@ -23,14 +23,14 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black leading-tight">
+            <h1 className="text-4xl lg:text-4xl xl:text-5xl font-black leading-tight">
               <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                Know Before
+                Know Before You Go!
               </span>
               <br />
-              <span className="bg-gradient-to-r from-cyan-600 to-blue-800 bg-clip-text text-transparent">
+              {/* <span className="bg-gradient-to-r from-cyan-600 to-blue-800 bg-clip-text text-transparent">
                 You Go!
-              </span>
+              </span> */}
             </h1>
 
             <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-2xl">
@@ -111,7 +111,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-30 left-1/2 transform -translate-x-1/2">
         <div className="w-6 h-10 border-2 border-blue-300 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-blue-400 rounded-full mt-2 animate-bounce"></div>
         </div>
