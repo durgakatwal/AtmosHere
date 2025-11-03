@@ -58,7 +58,7 @@ const Contact = () => {
       {/* Footer Line */}
       <div className="mt-16 border-t border-blue-300/30 pt-6 text-center text-sm text-blue-100">
         © {new Date().getFullYear()} AtmosHere. All rights reserved. <br />
-        <span>Designed By: Durga Katwal</span>
+        <span>Developed By: Durga Katwal</span>
       </div>
     </section>
   );
