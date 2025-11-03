@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -13,20 +14,20 @@ const Navbar = () => {
         </a>
         <nav className="flex gap-6">
           <div className="hidden lg:flex gap-4 items-center">
-            <a className="text-md text-gray-700" href="/features">
+            <Link className="text-md text-gray-700" to="/features">
               Features
-            </a>
-            <a className="text-md text-gray-700" href="/about">
+            </Link>
+            <Link className="text-md text-gray-700" to="/about">
               About
-            </a>
-            <a className="text-md text-gray-700" href="/contact">
+            </Link>
+            <Link className="text-md text-gray-700" to="/contact">
               Contact
-            </a>
+            </Link>
           </div>
 
-          <a href="/weather">
+          <Link to="/weather">
             <Button text="Show weather" />
-          </a>
+          </Link>
           {/* example of props */}
           {/* <Button text="Login" />  */}
         </nav>

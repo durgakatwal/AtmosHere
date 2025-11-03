@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -43,18 +44,18 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a href="/weather" className="group">
+            <Link to="/weather" className="group">
               <Button
                 text="Get Weather Forecast"
                 className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl rounded-xl"
               />
-            </a>
+            </Link>
 
-            <a href="/about">
+            <Link to="/about">
               <button className="cursor-pointer px-8 py-4 text-lg font-semibold text-blue-600 border-2 border-blue-200 hover:border-blue-300 rounded-xl hover:bg-blue-50 transition-all duration-300 backdrop-blur-sm">
                 Learn More
               </button>
-            </a>
+            </Link>
           </div>
 
           {/* Stats */}
