@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="absolute bottom-20 left-20 w-72 h-72 bg-sky-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto items-center -mt-40 pb-1">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto items-center mt-3 lg:-mt-40 pb-1">
         {/* Text Content */}
         <div className="text-center lg:text-left space-y-8">
           <div className="space-y-4">
