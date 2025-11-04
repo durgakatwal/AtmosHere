@@ -1,4 +1,4 @@
-import { Clock, Cloud, Droplets, Eye, Wind } from "lucide-react";
+import { CircleGauge, Clock, Cloud, Droplets, Eye, Wind } from "lucide-react";
 import React from "react";
 import { getWeatherStatus } from "../../actions/getWeatherStatus";
 
@@ -37,6 +37,13 @@ const WeatherCard = ({ weather }) => {
           </div>
 
           <div className="flex flex-col items-center text-center">
+            <CircleGauge className="w-8 h-8 mb-3" />
+            {/* <Cloud className="w-8 h-8 mb-3" /> */}
+            <p className="text-sm mb-1">Pressure</p>
+            <p className="text-2xl font-bold">{weather.pressure_msl}hPa</p>
+          </div>
+
+          <div className="flex flex-col items-center text-center">
             <Wind className="w-8 h-8 mb-3" />
             <p className="text-sm mb-1">Wind speed</p>
             <p className="text-2xl font-bold">{weather.wind_speed_10m}mph</p>
@@ -46,12 +53,6 @@ const WeatherCard = ({ weather }) => {
             <Eye className="w-8 h-8 mb-3" />
             <p className="text-sm mb-1">Visibility</p>
             <p className="text-2xl font-bold">{weather.visibility}m</p>
-          </div>
-
-          <div className="flex flex-col items-center text-center">
-            <Cloud className="w-8 h-8 mb-3" />
-            <p className="text-sm mb-1">Pressure</p>
-            <p className="text-2xl font-bold">{weather.pressure_msl}mb</p>
           </div>
 
           {/* <div className="flex flex-col items-center text-center">
