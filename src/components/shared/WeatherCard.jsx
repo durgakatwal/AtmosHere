@@ -21,7 +21,7 @@ const WeatherCard = ({ weather }) => {
           <span className="text-2xl">°F</span>
         </div>
         <p className="text-white/80 mt-2">
-          Feels like {weather.apparant_temperature}°F
+          Feels like {weather.apparent_temperature}°F
         </p>
       </div>
 
